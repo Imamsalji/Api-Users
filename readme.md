@@ -9,7 +9,7 @@ Ikuti langkah-langkah berikut untuk meng-clone dan menjalankan proyek Laravel de
 Jalankan perintah berikut di terminal:
 
 ```bash
-git clone https://github.com/username/repository.git
+git clone https://github.com/Imamsalji/Api-Users.git
 cd repository
 ```
 
@@ -19,13 +19,13 @@ Ganti `username` dan `repository` dengan URL repo milikmu.
 
 ### 2️⃣ Buat File `.env` dan Konfigurasi
 
-Salin `.env.example` ke `.env`:
+Salin `.env.example` ke `.env` di folder src:
 
 ```bash
 cp .env.example .env
 ```
 
-Lalu, sesuaikan konfigurasi database di `.env` jika diperlukan.
+Lalu, sesuaikan konfigurasi database di `.env` yang berada di dalam folder docker jika diperlukan.
 
 ---
 
@@ -46,7 +46,7 @@ Ini akan membangun dan menjalankan container Laravel, MySQL, dan PHPMyAdmin.
 Masuk ke dalam container Laravel dan jalankan perintah berikut:
 
 ```bash
-docker exec -it app bash
+docker exec -it laravel_app bash
 composer install
 ```
 
@@ -78,7 +78,7 @@ Jika tidak menggunakan Docker, jalankan server secara manual:
 php artisan serve
 ```
 
-Akses API di: `http://127.0.0.1:8000`
+Akses API di docker: `http://localhost:8000`
 
 ---
 
@@ -100,5 +100,11 @@ Sekarang proyek Laravel sudah berjalan di lokal. Jika mengalami masalah, cek log
 
 ```bash
 docker logs app -f
+```
+
+jika mau menjalankan UnitTest jalankan dengan:
+
+```bash
+php artisan test  
 ```
 
