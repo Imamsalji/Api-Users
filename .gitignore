@@ -1,0 +1,56 @@
+# Laravel & Environment Files
+/.env
+/.env.backup
+/.env.testing
+/.phpunit.result.cache
+
+# Debugging & Log Files
+/storage/*.log
+/storage/*.key
+/storage/debugbar
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+/storage/logs/*
+
+# Vendor & Dependencies
+/vendor/
+/node_modules/
+/composer.lock
+/package-lock.json
+/yarn.lock
+
+# Ignore MySQL socket file
+docker/mysql/mysql.sock
+docker/mysql/data/
+
+# Docker & Database Files
+/docker/mysql/data/
+/docker/mysql/db/
+/docker/mysql/*.cnf
+/docker/php.ini
+/docker/nginx.conf
+/docker-compose.override.yml
+
+# Cache Files
+/bootstrap/cache/*
+/public/hot
+/public/storage
+/public/mix-manifest.json
+/public/css/app.css
+/public/js/app.js
+
+# IDE & System Files
+/.idea/
+/.vscode/
+/nbproject/
+/Thumbs.db
+.DS_Store
+
+# PHPUnit & Test Coverage
+/phpunit.xml
+/tests/_output/
+/tests/_support/_generated/
+
+# Miscellaneous
+/.fleet/
