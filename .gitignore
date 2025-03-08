@@ -29,7 +29,6 @@ docker/mysql/data/
 /docker/mysql/db/
 /docker/mysql/*.cnf
 /docker/php.ini
-/docker/nginx.conf
 /docker-compose.override.yml
 
 # Cache Files
